@@ -19,6 +19,6 @@ ex :-
 1) const mgt = await ethers.getContractAt("MagToken","Token_address"); #creates instance of the MagToken as mgt.
 2) const [owner,user1,user2,user3] = await ethers.getSigners() #test accounts.
 3) await mgt.balanceOf(user1.address);
-4) await mgt.mint(user1.address,ethers.parseUints("500",8));
+4) await mgt.mint(user1.address,ethers.parseUnits("500",8));
 5) await mgt.balanceOf(user1.address);
 ```
